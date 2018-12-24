@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henry.myprojectmaterials.Home">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/courses">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Engineering Courses"
+            style="@style/courses"
+            android:gravity="center"
+            />
+
+
+        <Button
+            android:id="@+id/btncivil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/civil"/>
+        <Button
+            android:id="@+id/electelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/elect"/>
+        <Button
+            android:id="@+id/btnmechanical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mechanical"/>
+        <Button
+            android:id="@+id/btncompengine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comp_engine"/>
+        <Button
+            android:id="@+id/btnchemicalaengine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chem_engine"/>
+
+    </LinearLayout>
+        </ScrollView>
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/courses">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Science Courses"
+            style="@style/courses"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btncomputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/computer"/>
+        <Button
+            android:id="@+id/maths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maths"/>
+        <Button
+            android:id="@+id/btnstatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Statistics"/>
+        <Button
+            android:id="@+id/btnphysics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/physics"/>
+        <Button
+            android:id="@+id/btnchemistry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chemistry"/>
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
